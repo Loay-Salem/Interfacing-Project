@@ -1,0 +1,389 @@
+
+Smart_home master.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000022e  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000006a  00800060  0000022e  000002c2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000002  008000ca  008000ca  0000032c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000032c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000035c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000a0  00000000  00000000  00000398  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000009b1  00000000  00000000  00000438  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000006fe  00000000  00000000  00000de9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000433  00000000  00000000  000014e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000dc  00000000  00000000  0000191c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000353  00000000  00000000  000019f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000cd  00000000  00000000  00001d4b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000060  00000000  00000000  00001e18  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5e 00 	jmp	0xbc	; 0xbc <__ctors_end>
+   4:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+   8:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+   c:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  10:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  14:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  18:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  1c:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  20:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  24:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  28:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  2c:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  30:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  34:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  38:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  3c:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  40:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  44:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  48:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  4c:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  50:	0c 94 7b 00 	jmp	0xf6	; 0xf6 <__bad_interrupt>
+  54:	8c 00       	.word	0x008c	; ????
+  56:	96 00       	.word	0x0096	; ????
+  58:	a0 00       	.word	0x00a0	; ????
+  5a:	c8 00       	.word	0x00c8	; ????
+  5c:	db 00       	.word	0x00db	; ????
+  5e:	db 00       	.word	0x00db	; ????
+  60:	db 00       	.word	0x00db	; ????
+  62:	db 00       	.word	0x00db	; ????
+  64:	db 00       	.word	0x00db	; ????
+  66:	db 00       	.word	0x00db	; ????
+  68:	db 00       	.word	0x00db	; ????
+  6a:	db 00       	.word	0x00db	; ????
+  6c:	db 00       	.word	0x00db	; ????
+  6e:	db 00       	.word	0x00db	; ????
+  70:	db 00       	.word	0x00db	; ????
+  72:	db 00       	.word	0x00db	; ????
+  74:	db 00       	.word	0x00db	; ????
+  76:	db 00       	.word	0x00db	; ????
+  78:	db 00       	.word	0x00db	; ????
+  7a:	db 00       	.word	0x00db	; ????
+  7c:	db 00       	.word	0x00db	; ????
+  7e:	db 00       	.word	0x00db	; ????
+  80:	db 00       	.word	0x00db	; ????
+  82:	db 00       	.word	0x00db	; ????
+  84:	db 00       	.word	0x00db	; ????
+  86:	db 00       	.word	0x00db	; ????
+  88:	db 00       	.word	0x00db	; ????
+  8a:	db 00       	.word	0x00db	; ????
+  8c:	db 00       	.word	0x00db	; ????
+  8e:	db 00       	.word	0x00db	; ????
+  90:	db 00       	.word	0x00db	; ????
+  92:	db 00       	.word	0x00db	; ????
+  94:	db 00       	.word	0x00db	; ????
+  96:	db 00       	.word	0x00db	; ????
+  98:	db 00       	.word	0x00db	; ????
+  9a:	db 00       	.word	0x00db	; ????
+  9c:	db 00       	.word	0x00db	; ????
+  9e:	db 00       	.word	0x00db	; ????
+  a0:	db 00       	.word	0x00db	; ????
+  a2:	db 00       	.word	0x00db	; ????
+  a4:	db 00       	.word	0x00db	; ????
+  a6:	db 00       	.word	0x00db	; ????
+  a8:	db 00       	.word	0x00db	; ????
+  aa:	db 00       	.word	0x00db	; ????
+  ac:	db 00       	.word	0x00db	; ????
+  ae:	db 00       	.word	0x00db	; ????
+  b0:	db 00       	.word	0x00db	; ????
+  b2:	db 00       	.word	0x00db	; ????
+  b4:	aa 00       	.word	0x00aa	; ????
+  b6:	b4 00       	.word	0x00b4	; ????
+  b8:	be 00       	.word	0x00be	; ????
+  ba:	d2 00       	.word	0x00d2	; ????
+
+000000bc <__ctors_end>:
+  bc:	11 24       	eor	r1, r1
+  be:	1f be       	out	0x3f, r1	; 63
+  c0:	cf e5       	ldi	r28, 0x5F	; 95
+  c2:	d8 e0       	ldi	r29, 0x08	; 8
+  c4:	de bf       	out	0x3e, r29	; 62
+  c6:	cd bf       	out	0x3d, r28	; 61
+
+000000c8 <__do_copy_data>:
+  c8:	10 e0       	ldi	r17, 0x00	; 0
+  ca:	a0 e6       	ldi	r26, 0x60	; 96
+  cc:	b0 e0       	ldi	r27, 0x00	; 0
+  ce:	ee e2       	ldi	r30, 0x2E	; 46
+  d0:	f2 e0       	ldi	r31, 0x02	; 2
+  d2:	02 c0       	rjmp	.+4      	; 0xd8 <__do_copy_data+0x10>
+  d4:	05 90       	lpm	r0, Z+
+  d6:	0d 92       	st	X+, r0
+  d8:	aa 3c       	cpi	r26, 0xCA	; 202
+  da:	b1 07       	cpc	r27, r17
+  dc:	d9 f7       	brne	.-10     	; 0xd4 <__do_copy_data+0xc>
+
+000000de <__do_clear_bss>:
+  de:	20 e0       	ldi	r18, 0x00	; 0
+  e0:	aa ec       	ldi	r26, 0xCA	; 202
+  e2:	b0 e0       	ldi	r27, 0x00	; 0
+  e4:	01 c0       	rjmp	.+2      	; 0xe8 <.do_clear_bss_start>
+
+000000e6 <.do_clear_bss_loop>:
+  e6:	1d 92       	st	X+, r1
+
+000000e8 <.do_clear_bss_start>:
+  e8:	ac 3c       	cpi	r26, 0xCC	; 204
+  ea:	b2 07       	cpc	r27, r18
+  ec:	e1 f7       	brne	.-8      	; 0xe6 <.do_clear_bss_loop>
+  ee:	0e 94 dc 00 	call	0x1b8	; 0x1b8 <main>
+  f2:	0c 94 15 01 	jmp	0x22a	; 0x22a <_exit>
+
+000000f6 <__bad_interrupt>:
+  f6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000fa <CTRL>:
+#include "UART.h"
+#include "SPI.h"
+volatile uint8 x;
+uint8 y;
+void CTRL(){
+	y=UART_Rec();
+  fa:	0e 94 f8 00 	call	0x1f0	; 0x1f0 <UART_Rec>
+  fe:	80 93 cb 00 	sts	0x00CB, r24	; 0x8000cb <y>
+	switch(y){
+ 102:	90 e0       	ldi	r25, 0x00	; 0
+ 104:	fc 01       	movw	r30, r24
+ 106:	f1 97       	sbiw	r30, 0x31	; 49
+ 108:	e4 33       	cpi	r30, 0x34	; 52
+ 10a:	f1 05       	cpc	r31, r1
+ 10c:	08 f0       	brcs	.+2      	; 0x110 <CTRL+0x16>
+ 10e:	53 c0       	rjmp	.+166    	; 0x1b6 <CTRL+0xbc>
+ 110:	e6 5d       	subi	r30, 0xD6	; 214
+ 112:	ff 4f       	sbci	r31, 0xFF	; 255
+ 114:	0c 94 0f 01 	jmp	0x21e	; 0x21e <__tablejump2__>
+		case '1':
+		x=SPI_Trans('1');
+ 118:	81 e3       	ldi	r24, 0x31	; 49
+ 11a:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 11e:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 1 on\r\n");
+ 122:	80 e6       	ldi	r24, 0x60	; 96
+ 124:	90 e0       	ldi	r25, 0x00	; 0
+ 126:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 12a:	08 95       	ret
+		case '2':
+		x=SPI_Trans('2');
+ 12c:	82 e3       	ldi	r24, 0x32	; 50
+ 12e:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 132:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 2 on\r\n");
+ 136:	8d e6       	ldi	r24, 0x6D	; 109
+ 138:	90 e0       	ldi	r25, 0x00	; 0
+ 13a:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 13e:	08 95       	ret
+		case '3':
+		x=SPI_Trans('3');
+ 140:	83 e3       	ldi	r24, 0x33	; 51
+ 142:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 146:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 3 on\r\n");
+ 14a:	8a e7       	ldi	r24, 0x7A	; 122
+ 14c:	90 e0       	ldi	r25, 0x00	; 0
+ 14e:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 152:	08 95       	ret
+		case 'a':
+		x=SPI_Trans('a');
+ 154:	81 e6       	ldi	r24, 0x61	; 97
+ 156:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 15a:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 1 off\r\n");
+ 15e:	87 e8       	ldi	r24, 0x87	; 135
+ 160:	90 e0       	ldi	r25, 0x00	; 0
+ 162:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 166:	08 95       	ret
+		case 'b':
+		x=SPI_Trans('b');
+ 168:	82 e6       	ldi	r24, 0x62	; 98
+ 16a:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 16e:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 2 off\r\n");
+ 172:	85 e9       	ldi	r24, 0x95	; 149
+ 174:	90 e0       	ldi	r25, 0x00	; 0
+ 176:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 17a:	08 95       	ret
+		case 'c':
+		x=SPI_Trans('c');
+ 17c:	83 e6       	ldi	r24, 0x63	; 99
+ 17e:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 182:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLed 3 off\r\n");
+ 186:	83 ea       	ldi	r24, 0xA3	; 163
+ 188:	90 e0       	ldi	r25, 0x00	; 0
+ 18a:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 18e:	08 95       	ret
+		case '4':
+		x=SPI_Trans('4');
+ 190:	84 e3       	ldi	r24, 0x34	; 52
+ 192:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 196:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLamp on\r\n");
+ 19a:	81 eb       	ldi	r24, 0xB1	; 177
+ 19c:	90 e0       	ldi	r25, 0x00	; 0
+ 19e:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+		break;
+ 1a2:	08 95       	ret
+		case 'd':
+		x=SPI_Trans('d');
+ 1a4:	84 e6       	ldi	r24, 0x64	; 100
+ 1a6:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <SPI_Trans>
+ 1aa:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__data_end>
+		UART_Str("\r\nLamp off\r\n");
+ 1ae:	8d eb       	ldi	r24, 0xBD	; 189
+ 1b0:	90 e0       	ldi	r25, 0x00	; 0
+ 1b2:	0e 94 00 01 	call	0x200	; 0x200 <UART_Str>
+ 1b6:	08 95       	ret
+
+000001b8 <main>:
+#include "SPI.h"
+#include "STD_Types.h"
+#include "CTRL.h"
+int main(void)
+{
+	SPI_Init();
+ 1b8:	0e 94 e3 00 	call	0x1c6	; 0x1c6 <SPI_Init>
+	UART_init();
+ 1bc:	0e 94 f0 00 	call	0x1e0	; 0x1e0 <UART_init>
+
+    /* Replace with your application code */
+    while (1) 
+    {
+		CTRL();
+ 1c0:	0e 94 7d 00 	call	0xfa	; 0xfa <CTRL>
+ 1c4:	fd cf       	rjmp	.-6      	; 0x1c0 <main+0x8>
+
+000001c6 <SPI_Init>:
+ */ 
+#include <avr/io.h>
+#include "STD_Types.h"
+#include "DIO_HW.h"
+void SPI_Init(){
+	DDRC_REG|=(1<<0);
+ 1c6:	a0 9a       	sbi	0x14, 0	; 20
+	DDRB_REG=(1<<5)|(1<<7);
+ 1c8:	80 ea       	ldi	r24, 0xA0	; 160
+ 1ca:	87 bb       	out	0x17, r24	; 23
+	SPCR_REG=(1<<SPE)|(1<<MSTR)|(1<<SPR0);
+ 1cc:	81 e5       	ldi	r24, 0x51	; 81
+ 1ce:	8d b9       	out	0x0d, r24	; 13
+ 1d0:	08 95       	ret
+
+000001d2 <SPI_Trans>:
+}
+unsigned char SPI_Trans(uint8 data){
+	PORTC_REG&=~(1<<0);
+ 1d2:	a8 98       	cbi	0x15, 0	; 21
+	SPDR_REG=data;
+ 1d4:	8f b9       	out	0x0f, r24	; 15
+	while(!(SPSR_REG&(1<<SPIF)));
+ 1d6:	77 9b       	sbis	0x0e, 7	; 14
+ 1d8:	fe cf       	rjmp	.-4      	; 0x1d6 <SPI_Trans+0x4>
+	PORTC_REG|=(1<<0);
+ 1da:	a8 9a       	sbi	0x15, 0	; 21
+	return SPDR_REG;
+ 1dc:	8f b1       	in	r24, 0x0f	; 15
+ 1de:	08 95       	ret
+
+000001e0 <UART_init>:
+ */ 
+#include <avr/io.h>
+#include "UART.h"
+#include "DIO_HW.h"
+void UART_init(){
+	DDRD_REG|=(1<<1);
+ 1e0:	89 9a       	sbi	0x11, 1	; 17
+	UBRRL_REG=103;
+ 1e2:	87 e6       	ldi	r24, 0x67	; 103
+ 1e4:	89 b9       	out	0x09, r24	; 9
+	UCSRB_REG=(1<<RXEN)|(1<<TXEN);
+ 1e6:	88 e1       	ldi	r24, 0x18	; 24
+ 1e8:	8a b9       	out	0x0a, r24	; 10
+	UCSRC=(1<<URSEL)|(1<<UCSZ0)|(1<<UCSZ1);
+ 1ea:	86 e8       	ldi	r24, 0x86	; 134
+ 1ec:	80 bd       	out	0x20, r24	; 32
+ 1ee:	08 95       	ret
+
+000001f0 <UART_Rec>:
+}
+unsigned char UART_Rec(){
+	while(!(UCSRA_REG&(1<<RXC)));
+ 1f0:	5f 9b       	sbis	0x0b, 7	; 11
+ 1f2:	fe cf       	rjmp	.-4      	; 0x1f0 <UART_Rec>
+	return UDR_REG;
+ 1f4:	8c b1       	in	r24, 0x0c	; 12
+}
+ 1f6:	08 95       	ret
+
+000001f8 <UART_Send>:
+void UART_Send(uint8 data){
+	while(!(UCSRA_REG&(1<<UDRE)));
+ 1f8:	5d 9b       	sbis	0x0b, 5	; 11
+ 1fa:	fe cf       	rjmp	.-4      	; 0x1f8 <UART_Send>
+	UDR_REG=data;
+ 1fc:	8c b9       	out	0x0c, r24	; 12
+ 1fe:	08 95       	ret
+
+00000200 <UART_Str>:
+}
+void UART_Str(char * Str){
+ 200:	cf 93       	push	r28
+ 202:	df 93       	push	r29
+ 204:	ec 01       	movw	r28, r24
+	uint16 i=0;
+	while (Str[i]!='\0'){
+ 206:	88 81       	ld	r24, Y
+ 208:	88 23       	and	r24, r24
+ 20a:	31 f0       	breq	.+12     	; 0x218 <UART_Str+0x18>
+ 20c:	21 96       	adiw	r28, 0x01	; 1
+		UART_Send(Str[i]);
+ 20e:	0e 94 fc 00 	call	0x1f8	; 0x1f8 <UART_Send>
+	while(!(UCSRA_REG&(1<<UDRE)));
+	UDR_REG=data;
+}
+void UART_Str(char * Str){
+	uint16 i=0;
+	while (Str[i]!='\0'){
+ 212:	89 91       	ld	r24, Y+
+ 214:	81 11       	cpse	r24, r1
+ 216:	fb cf       	rjmp	.-10     	; 0x20e <UART_Str+0xe>
+		UART_Send(Str[i]);
+		i++;
+	}
+ 218:	df 91       	pop	r29
+ 21a:	cf 91       	pop	r28
+ 21c:	08 95       	ret
+
+0000021e <__tablejump2__>:
+ 21e:	ee 0f       	add	r30, r30
+ 220:	ff 1f       	adc	r31, r31
+ 222:	05 90       	lpm	r0, Z+
+ 224:	f4 91       	lpm	r31, Z
+ 226:	e0 2d       	mov	r30, r0
+ 228:	09 94       	ijmp
+
+0000022a <_exit>:
+ 22a:	f8 94       	cli
+
+0000022c <__stop_program>:
+ 22c:	ff cf       	rjmp	.-2      	; 0x22c <__stop_program>

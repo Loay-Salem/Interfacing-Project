@@ -1,0 +1,256 @@
+
+Smart_home slave.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000154  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000001c8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000001  00800060  00800060  000001c8  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000001c8  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001f8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  00000234  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000006dc  00000000  00000000  0000029c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000610  00000000  00000000  00000978  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000002d4  00000000  00000000  00000f88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000007c  00000000  00000000  0000125c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000322  00000000  00000000  000012d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000001f  00000000  00000000  000015fa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000038  00000000  00000000  00001619  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5e 00 	jmp	0xbc	; 0xbc <__ctors_end>
+   4:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+   8:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+   c:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  10:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  14:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  18:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  1c:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  20:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  24:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  28:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  2c:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  30:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  34:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  38:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  3c:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  40:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  44:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  48:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  4c:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  50:	0c 94 70 00 	jmp	0xe0	; 0xe0 <__bad_interrupt>
+  54:	81 00       	.word	0x0081	; ????
+  56:	83 00       	.word	0x0083	; ????
+  58:	85 00       	.word	0x0085	; ????
+  5a:	8d 00       	.word	0x008d	; ????
+  5c:	90 00       	.word	0x0090	; ????
+  5e:	90 00       	.word	0x0090	; ????
+  60:	90 00       	.word	0x0090	; ????
+  62:	90 00       	.word	0x0090	; ????
+  64:	90 00       	.word	0x0090	; ????
+  66:	90 00       	.word	0x0090	; ????
+  68:	90 00       	.word	0x0090	; ????
+  6a:	90 00       	.word	0x0090	; ????
+  6c:	90 00       	.word	0x0090	; ????
+  6e:	90 00       	.word	0x0090	; ????
+  70:	90 00       	.word	0x0090	; ????
+  72:	90 00       	.word	0x0090	; ????
+  74:	90 00       	.word	0x0090	; ????
+  76:	90 00       	.word	0x0090	; ????
+  78:	90 00       	.word	0x0090	; ????
+  7a:	90 00       	.word	0x0090	; ????
+  7c:	90 00       	.word	0x0090	; ????
+  7e:	90 00       	.word	0x0090	; ????
+  80:	90 00       	.word	0x0090	; ????
+  82:	90 00       	.word	0x0090	; ????
+  84:	90 00       	.word	0x0090	; ????
+  86:	90 00       	.word	0x0090	; ????
+  88:	90 00       	.word	0x0090	; ????
+  8a:	90 00       	.word	0x0090	; ????
+  8c:	90 00       	.word	0x0090	; ????
+  8e:	90 00       	.word	0x0090	; ????
+  90:	90 00       	.word	0x0090	; ????
+  92:	90 00       	.word	0x0090	; ????
+  94:	90 00       	.word	0x0090	; ????
+  96:	90 00       	.word	0x0090	; ????
+  98:	90 00       	.word	0x0090	; ????
+  9a:	90 00       	.word	0x0090	; ????
+  9c:	90 00       	.word	0x0090	; ????
+  9e:	90 00       	.word	0x0090	; ????
+  a0:	90 00       	.word	0x0090	; ????
+  a2:	90 00       	.word	0x0090	; ????
+  a4:	90 00       	.word	0x0090	; ????
+  a6:	90 00       	.word	0x0090	; ????
+  a8:	90 00       	.word	0x0090	; ????
+  aa:	90 00       	.word	0x0090	; ????
+  ac:	90 00       	.word	0x0090	; ????
+  ae:	90 00       	.word	0x0090	; ????
+  b0:	90 00       	.word	0x0090	; ????
+  b2:	90 00       	.word	0x0090	; ????
+  b4:	87 00       	.word	0x0087	; ????
+  b6:	89 00       	.word	0x0089	; ????
+  b8:	8b 00       	.word	0x008b	; ????
+  ba:	8f 00       	.word	0x008f	; ????
+
+000000bc <__ctors_end>:
+  bc:	11 24       	eor	r1, r1
+  be:	1f be       	out	0x3f, r1	; 63
+  c0:	cf e5       	ldi	r28, 0x5F	; 95
+  c2:	d8 e0       	ldi	r29, 0x08	; 8
+  c4:	de bf       	out	0x3e, r29	; 62
+  c6:	cd bf       	out	0x3d, r28	; 61
+
+000000c8 <__do_clear_bss>:
+  c8:	20 e0       	ldi	r18, 0x00	; 0
+  ca:	a0 e6       	ldi	r26, 0x60	; 96
+  cc:	b0 e0       	ldi	r27, 0x00	; 0
+  ce:	01 c0       	rjmp	.+2      	; 0xd2 <.do_clear_bss_start>
+
+000000d0 <.do_clear_bss_loop>:
+  d0:	1d 92       	st	X+, r1
+
+000000d2 <.do_clear_bss_start>:
+  d2:	a1 36       	cpi	r26, 0x61	; 97
+  d4:	b2 07       	cpc	r27, r18
+  d6:	e1 f7       	brne	.-8      	; 0xd0 <.do_clear_bss_loop>
+  d8:	0e 94 91 00 	call	0x122	; 0x122 <main>
+  dc:	0c 94 a8 00 	jmp	0x150	; 0x150 <_exit>
+
+000000e0 <__bad_interrupt>:
+  e0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000e4 <CTRL_Response>:
+#include "STD_Types.h"
+#include "DIO_HW.h"
+#include "SPI.h"
+   uint8 x=0;
+void CTRL_Response(){
+			x=SPI_Trans(0x55);
+  e4:	85 e5       	ldi	r24, 0x55	; 85
+  e6:	0e 94 9d 00 	call	0x13a	; 0x13a <SPI_Trans>
+  ea:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+			switch (x){
+  ee:	90 e0       	ldi	r25, 0x00	; 0
+  f0:	fc 01       	movw	r30, r24
+  f2:	f1 97       	sbiw	r30, 0x31	; 49
+  f4:	e4 33       	cpi	r30, 0x34	; 52
+  f6:	f1 05       	cpc	r31, r1
+  f8:	98 f4       	brcc	.+38     	; 0x120 <CTRL_Response+0x3c>
+  fa:	e6 5d       	subi	r30, 0xD6	; 214
+  fc:	ff 4f       	sbci	r31, 0xFF	; 255
+  fe:	0c 94 a2 00 	jmp	0x144	; 0x144 <__tablejump2__>
+				case '1':
+				PORTC_REG|=(1<<0);
+ 102:	a8 9a       	sbi	0x15, 0	; 21
+				break;
+ 104:	08 95       	ret
+				case '2':
+				PORTC_REG|=(1<<4);
+ 106:	ac 9a       	sbi	0x15, 4	; 21
+				break;
+ 108:	08 95       	ret
+				case '3':
+				PORTC_REG|=(1<<7);
+ 10a:	af 9a       	sbi	0x15, 7	; 21
+				break;
+ 10c:	08 95       	ret
+				case 'a':
+				PORTC_REG&=~(1<<0);
+ 10e:	a8 98       	cbi	0x15, 0	; 21
+				break;
+ 110:	08 95       	ret
+				case 'b':
+				PORTC_REG&=~(1<<4);
+ 112:	ac 98       	cbi	0x15, 4	; 21
+				break;
+ 114:	08 95       	ret
+				case 'c':
+				PORTC_REG&=~(1<<7);
+ 116:	af 98       	cbi	0x15, 7	; 21
+				break;
+ 118:	08 95       	ret
+				break;
+				case '4':
+				PORTD_REG|=(1<<2);
+ 11a:	92 9a       	sbi	0x12, 2	; 18
+				break;
+ 11c:	08 95       	ret
+				case 'd':
+				PORTD_REG&=~(1<<2);
+ 11e:	92 98       	cbi	0x12, 2	; 18
+ 120:	08 95       	ret
+
+00000122 <main>:
+#include "DIO_HW.h"
+#include "STD_Types.h"
+#include "CTRL_Response.h"
+int main(void)
+{
+	SPI_Init();
+ 122:	0e 94 99 00 	call	0x132	; 0x132 <SPI_Init>
+    DDRC_REG=(1<<0)|(1<<4)|(1<<7);
+ 126:	81 e9       	ldi	r24, 0x91	; 145
+ 128:	84 bb       	out	0x14, r24	; 20
+	DDRD_REG|=(1<<2);
+ 12a:	8a 9a       	sbi	0x11, 2	; 17
+	while (1) 
+    {
+		CTRL_Response();
+ 12c:	0e 94 72 00 	call	0xe4	; 0xe4 <CTRL_Response>
+ 130:	fd cf       	rjmp	.-6      	; 0x12c <main+0xa>
+
+00000132 <SPI_Init>:
+ */ 
+#include <avr/io.h>
+#include "DIO_HW.h"
+#include "STD_Types.h"
+void SPI_Init(){
+	DDRB_REG=(1<<6);
+ 132:	80 e4       	ldi	r24, 0x40	; 64
+ 134:	87 bb       	out	0x17, r24	; 23
+	SPCR_REG=(1<<SPE);
+ 136:	8d b9       	out	0x0d, r24	; 13
+ 138:	08 95       	ret
+
+0000013a <SPI_Trans>:
+}
+unsigned char SPI_Trans(uint8 data){
+
+	SPDR_REG=data;
+ 13a:	8f b9       	out	0x0f, r24	; 15
+	while(!(SPSR_REG&(1<<SPIF)));
+ 13c:	77 9b       	sbis	0x0e, 7	; 14
+ 13e:	fe cf       	rjmp	.-4      	; 0x13c <SPI_Trans+0x2>
+	return SPDR_REG;
+ 140:	8f b1       	in	r24, 0x0f	; 15
+
+ 142:	08 95       	ret
+
+00000144 <__tablejump2__>:
+ 144:	ee 0f       	add	r30, r30
+ 146:	ff 1f       	adc	r31, r31
+ 148:	05 90       	lpm	r0, Z+
+ 14a:	f4 91       	lpm	r31, Z
+ 14c:	e0 2d       	mov	r30, r0
+ 14e:	09 94       	ijmp
+
+00000150 <_exit>:
+ 150:	f8 94       	cli
+
+00000152 <__stop_program>:
+ 152:	ff cf       	rjmp	.-2      	; 0x152 <__stop_program>
